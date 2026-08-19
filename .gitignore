@@ -1,0 +1,21 @@
+.matplotlib
+.venv
+artifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+main.ipynb
+
+# Obsolete experiment scripts
+main.py
+classifier_pipeline.py
+run_faiss_predict.py
+tune_lightgbm.py
+
+# macOS
+.DS_Store
