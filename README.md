@@ -58,7 +58,7 @@ Per-class values based on one to three test examples should be treated cautiousl
 ## Repository contents
 
 - `main_clean.ipynb` — end-to-end analysis, model selection, evaluation, and visualisations.
-- `data/augmented_dataset.csv` — working input used by the notebook. It contains an `is_synthetic` flag so real and synthetic records can be separated safely.
+- `data/augmented_dataset.csv` — local working input used by the notebook. It is excluded from Git because transaction data may be sensitive.
 - `README_assets/` — images used in this README.
 
 ## Run locally
@@ -69,7 +69,7 @@ Use Python 3.10+ and install the required packages:
 python -m pip install pandas numpy scikit-learn matplotlib
 ```
 
-Open `main_clean.ipynb`, confirm that `dataset_File_path` points to `data/augmented_dataset.csv`, then run the notebook from top to bottom. Random seeds are fixed at `42` for reproducibility.
+For the downloader, set a fresh private source URL in `PEAKFLO_SOURCE_URL`; do not commit that URL. Open `main_clean.ipynb`, confirm that `dataset_File_path` points to `data/augmented_dataset.csv`, then run the notebook from top to bottom. Random seeds are fixed at `42` for reproducibility.
 
 ## Limitations and next steps
 
